@@ -1,0 +1,49 @@
+#quote-box{
+	font-size: 25px;
+	font-family: Verdana;
+	background-color: white;
+}
+.align-center{
+	align-items: center;
+	justify-content: center;
+}
+.con{
+	padding-top: 30vh;
+	margin-left:10vw;
+	margin-right: 10vw;
+}
+#wrapper{
+	max-width: ;
+}
+#new-quote{
+	align-content:  right;
+}
+#text{
+		padding :7px;
+}
+#author{
+	font-family: papyrus;
+	text-align: right;
+	font-size: 18px;
+	padding :7px;
+}
+#twitter{
+	margin-right: 30%;
+}
+.btn {
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 14px 14px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer;
+  margin:10px; /* Mouse pointer on hover */
+  margin-bottom: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+.colr{
+	background-color: green;
+}

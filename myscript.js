@@ -1,5 +1,6 @@
 let resp;
 let org_resp;
+let colors = ['#16a085', '#27ae60', '#2c3e50', '#f39c12', '#e74c3c', '#9b59b6', '#FB6964', '#342224', "#472E32", "#BDBB99", "#77B1A9", "#73A857"];
 const random_num = ()=>{
 	let num = Math.floor(Math.random() * 101);
 	return num;
@@ -13,7 +14,9 @@ xhr.onreadystatechange = ()=>{
 		resp = xhr.response; 
 		org_resp = JSON.parse(resp);
 		let r_num = random_num();
-		document.getElementById('text').innerHTML = org_resp.quotes[r_num].quote;
+		let current_color = colors[Math.floor(Math.random() * 12)];
+		$(".colr").css("background-color",current_color); 
+		document.getElementById('text').innerHTML = "\"" + org_resp.quotes[r_num].quote;
 		document.getElementById('author').innerHTML = org_resp.quotes[r_num].author;
 				
 	}
@@ -23,5 +26,3 @@ xhr.send();
 }
 
 $('document').ready(Hello());
-
-			
